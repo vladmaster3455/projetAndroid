@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home Fragment"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+
+    <Switch
+        android:id="@+id/switch_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Afficher : Hommes / Femmes"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+
+    <Spinner
+        android:id="@+id/spinner_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/gender_categories"
+        android:paddingBottom="16dp"
+        android:prompt="@string/spinner_prompt" />
+
+    <Button
+        android:id="@+id/button_validate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Valider" />
+
+</LinearLayout>

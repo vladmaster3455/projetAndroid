@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"  android:gravity="center_horizontal" android:background="#F8F8F8"> <TextView
+    android:id="@+id/calendar_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Mon Calendrier"
+    android:textSize="28sp"
+    android:textColor="#333333"
+    android:textStyle="bold"
+    android:layout_marginBottom="24dp" android:fontFamily="sans-serif-medium" />
+
+    <CalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white" android:selectedWeekBackgroundColor="#E8F5E9" android:focusedMonthDateColor="#4CAF50" android:weekSeparatorLineColor="#CCCCCC" android:minDate="01/01/2020" android:maxDate="31/12/2030" /> <TextView
+        android:id="@+id/selected_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Date sélectionnée : Aucune"
+        android:textSize="18sp"
+        android:textColor="#555555"/>
+
+</LinearLayout>
